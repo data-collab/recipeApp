@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Food App</title>
+</head>
+<body>
+<nav class="topnav" id="myTopnav">
+    <a href="#">Recipe App</a>
+    <a href="#">Authentication</a>
+    <a href="#">Contact</a>
+    <a style="cursor: pointer" id="logout">Log out</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+
+
+<section class="container">
+    <div class="food-wrapper">
+        <div class="food-search">
+            <h2 class="title">
+                იპოვეთ თქვენთვის სასურველი ინგრედიენტი !
+            </h2>
+            <h3 class="title-h3">თქვენთივს სასურველი ინგრედიენტით დამზადებული საჭმლის საპოვნელად,
+                სასურველი ინგრედიენტის დასახელება <strong>ლათინურად</strong> შეიყვანეთ.</h3>
+            <div class="food-search-box">
+                <input type="text" class="search-control" placeholder="შეიყვანეთ დასახელება..." id="search-input">
+                <button type="button" class="btn search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="food-result">
+            <h2 class="title">
+                ძებნის შედეგი:
+            </h2>
+            <div id="food">
+
+            </div>
+        </div>
+        <div class="food-details">
+            <button class="btn recipe-close-btn" type="button" id="recipe-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="food-details-content">
+<!--                <h2 class="recipe-title">საჭმლის სახელი</h2>-->
+<!--                <p class="recipe-category">კატეგორიის დასახელება</p>-->
+<!--                <div class="recipe-instruct">-->
+<!--                    <h3>ინსტრუქცია:</h3>-->
+<!--                    <p></p>-->
+<!--                </div>-->
+<!--                <div class="recipe-food-img">-->
+<!--                    <img src="./images/tasty%20fries.jpg" alt="food">-->
+<!--                </div>-->
+<!--                <div class="recipe-link">-->
+<!--                    <a href="#" target="_blank">იხილეთ ვიდეო</a>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<button id="go-up"><a class="mybtn" href="#" style="color: white"><i class="fa fa-chevron-up"></i></a></button>
+<script src="index.js"></script>
+</body>
+</html>
